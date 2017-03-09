@@ -1,1 +1,1 @@
-angular.module('validations', [])
+angular.module('validations', ["ngRoute", "ngResource"])

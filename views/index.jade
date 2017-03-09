@@ -1,20 +1,13 @@
 html(lang="pt-br",ng-app="validations")
 	head
 		link(rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css")
+		script(src="/vendor/angular/angular.js")		
+		script(src="/vendor/jquery/dist/jquery.js")		
+		script(src="/vendor/angular-route/angular-route.js")		
+		script(src="/vendor/angular-resource/angular-resource.js")		
+		script(src="javascripts/main.js")		
+		script(src="javascripts/routes.js")		
+		script(src="javascripts/controllers/indexController.js")		
 		title Validações
 	body
-		div.container
-			div.jumbotron 
-				h1.text-center Contatos
-
-			table.table
-				thead
-					th Nome
-					th Email
-					th Ações
-				tbody
-					td junior
-					td junior
-					td Deletar / Editar	
-
-			a.btn.btn-primary(href="#!/adicionar") adicionar			
+		div(ng-view)
